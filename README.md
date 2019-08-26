@@ -8,7 +8,7 @@ You can find my [Figma](https://www.figma.com/file/EiUOl5og5UfQMkzBm80ABm/Tables
 
 You can view the [color styles](https://docs.google.com/document/d/11QJGjOF75NNsq9wVon3yqbIcr3I9b8CG3oHkyR548do/edit?usp=sharing) here.
 
-You can find the Team info [form](https://docs.google.com/forms/d/e 1FAIpQLSeMnohz-I7f5QXd-Kfo-E7OTKxS_Q9bAxrnXHKzWfIodYWt2A/viewform?usp=sf_link) for the About page here.
+You can find the Team info [form](https://forms.gle/o86SdUCMEKuo2yMS8) for the About page here.
 
 #### Pitch: 
 People often have a million tabs up and lose track of what they were doing. This website lets you organize them in to-do lists and make a note of why it was important. Makes it easy to pick up where you left off.
