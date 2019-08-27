@@ -1,0 +1,129 @@
+$color: (
+    primary: #277373,
+    p-accent1: #4EA6A6,
+    p-accent2: #B0D9D5,
+    secondary: #F25041,
+    s-accent1: #F29188
+);
+$padding: 15px;
+$borders: 15px;
+$desktop: 750px;
+
+@function base-color($base-color){
+    @return map-get($color, $base-color )
+}
+
+
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content
+    }
+}
+
+body, html {
+    height: 100%;
+}
+body {
+    font-family: 'Raleway', 'Poppins', sans-serif;
+    background-color: base-color(primary);
+    margin: 0;
+
+    #bg {
+        width: 100%;
+        height: 100%;
+    }
+    header a {
+        color: base-color(p-accent2);
+        padding: $padding;
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+        }
+}
+main {
+    @include desktop {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "primary card";
+    }
+    section#card {
+        background: #B0D9D5;
+        padding: 20px;
+        margin: 1em auto;
+        border-radius: $borders;
+        box-shadow: 0 10px 30px rgba(0,0,0,.2);
+        width: 80%;
+
+        @include desktop {
+            grid-area: card;
+            height: fit-content;
+            align-self: center;
+            margin: 1em;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-bottom: 10px;
+
+                span {
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    background-color: base-color(s-accent1);
+                    border-radius: 50%;
+                    margin-right:  10px;
+                }
+
+                strong {
+                    display: inline-block;
+                    margin-left: max(40px);
+                    margin-top: 10px;
+                    color: base-color(secondary);
+                }
+            }
+        }
+    }
+
+    section#primary {
+        color: base-color(p-accent2);
+        padding: $padding;
+        text-align: center;
+
+        @include desktop {
+            grid-area: primary;
+            text-align: left;
+            margin: 4em 0 0 4em;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.4em;
+            
+        }
+        a{
+            color: base-color(p-accent2);
+            border-radius: $borders;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            background-color: base-color(secondary);
+            display: block;
+            text-align: center;
+            margin: 50px auto 0 auto;
+            padding: $padding;
+
+            @include desktop {
+                display: inline-block;
+                padding: $padding $padding * 4;
+            }
+        }
+    }
+}
