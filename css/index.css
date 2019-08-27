@@ -123,4 +123,34 @@ main section#primary a {
     padding: 15px 60px;
   }
 }
+
+main section#primary .register-form {
+  padding: 5px;
+}
+
+main section#primary .register-form .btn-register {
+  border-radius: 1.5rem;
+  border: none;
+  width: 120px;
+  background: #F25041;
+  font-weight: 600;
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+main section#primary .register-form .btn-register:hover {
+  background: white;
+  color: #277373;
+}
+
+main section#primary .register-form .btn-register #register {
+  padding: 0px;
+  margin: 0px;
+}
+
+main section#primary .register-form .btn-register #register:hover {
+  background: white;
+  color: #277373;
+}
 /*# sourceMappingURL=index.css.map */

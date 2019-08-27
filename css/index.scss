@@ -124,6 +124,33 @@ main {
                 display: inline-block;
                 padding: $padding $padding * 4;
             }
+            
+        }
+        .register-form{
+            padding: 5px;
+            .btn-register{
+                border-radius: 1.5rem;
+                border: none;
+                width: 120px;
+                background: #F25041;
+                font-weight: 600;
+                color:white;
+                margin-top: 20px;
+                padding: 10px;
+                &:hover {
+                    background: white;
+                    color: base-color(primary);
+                }
+                #register {
+                    padding: 0px;
+                    margin: 0px;
+                    &:hover {
+                        background: white;
+                        color: base-color(primary);
+                    }
+                }
+                
+            }
         }
     }
 }
