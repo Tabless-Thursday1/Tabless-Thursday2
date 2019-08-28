@@ -25,20 +25,28 @@ body, html {
 }
 body {
     font-family: 'Raleway', 'Poppins', sans-serif;
-    background-color: base-color(primary);
+    background-image: linear-gradient(to right,#3F8D7D,#4DAA88,);
     margin: 0;
 
     #bg {
         width: 100%;
         height: 100%;
     }
-    header a {
-        color: base-color(p-accent2);
+    header {
+        display: flex;
         padding: $padding;
-        display: block;
-        text-transform: uppercase;
-        text-decoration: none;
+
+        img {
+            order: 1;
+            width: 65px;
+            height:50px;
         }
+        h3 {
+            text-transform: uppercase;
+            color: base-color(p-accent2);
+            order: 2;
+        }
+    }
 }
 main {
     @include desktop {
@@ -75,6 +83,13 @@ main {
                     background-color: base-color(s-accent1);
                     border-radius: 50%;
                     margin-right:  10px;
+
+                    &:hover {
+                        background-color: base-color(p-accent2);
+                        border: 4px solid base-color(primary);
+                        width: 24px;
+                        height:  24px;
+                    }
                 }
 
                 strong {
@@ -152,5 +167,23 @@ main {
                 
             }
         }
+    }
+}
+.section2 {
+    background-color: white;
+    display: block;
+    align-content: center;
+    width: 100%;
+    border-top: 5px solid #277373;
+    h2{
+        color: #277373;
+        margin-left: 3.3em;
+        padding-top: 3em;
+    }
+    p{
+        color: #277373;
+        margin-left: 5em;
+        margin-right: 5em;
+        padding-bottom: 5em;
     }
 }

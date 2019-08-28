@@ -4,7 +4,8 @@ body, html {
 
 body {
   font-family: 'Raleway', 'Poppins', sans-serif;
-  background-color: #277373;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3F8D7D), to(#4DAA88));
+  background-image: linear-gradient(to right, #3F8D7D, #4DAA88);
   margin: 0;
 }
 
@@ -13,12 +14,27 @@ body #bg {
   height: 100%;
 }
 
-body header a {
-  color: #B0D9D5;
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 15px;
-  display: block;
+}
+
+body header img {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 65px;
+  height: 50px;
+}
+
+body header h3 {
   text-transform: uppercase;
-  text-decoration: none;
+  color: #B0D9D5;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 @media (min-width: 750px) {
@@ -71,6 +87,13 @@ main section#card ul li span {
   background-color: #F29188;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+main section#card ul li span:hover {
+  background-color: #B0D9D5;
+  border: 4px solid #277373;
+  width: 24px;
+  height: 24px;
 }
 
 main section#card ul li strong {
@@ -152,5 +175,27 @@ main section#primary .register-form .btn-register #register {
 main section#primary .register-form .btn-register #register:hover {
   background: white;
   color: #277373;
+}
+
+.section2 {
+  background-color: white;
+  display: block;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  border-top: 5px solid #277373;
+}
+
+.section2 h2 {
+  color: #277373;
+  margin-left: 3.3em;
+  padding-top: 3em;
+}
+
+.section2 p {
+  color: #277373;
+  margin-left: 5em;
+  margin-right: 5em;
+  padding-bottom: 5em;
 }
 /*# sourceMappingURL=index.css.map */

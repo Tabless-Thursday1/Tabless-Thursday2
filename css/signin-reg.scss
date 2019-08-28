@@ -1,9 +1,14 @@
 body{
-    background-image: linear-gradient(to right, #277373, #4EA6A6);
+    background-image: linear-gradient(to right,#4DAA88,#277373);
     margin-top: 5%;
+}
+.container{
+    display: flex;
+    justify-content: center;
 }
 .form-left {
     text-align: center;
+    width: 30em;
     color: #B0D9D5;
     padding: 30px;
 
@@ -27,6 +32,7 @@ body{
     }
 }
 .form-right {
+    width: 30em;
     border: none;
     background: #F29188;
     border-top-left-radius: 10% 50%;
@@ -41,6 +47,7 @@ body{
     .register-form {
         padding: 10px;
         .btn-register {
+            float: right;
             border-radius: 1.5rem;
             border: none;
             width: 120px;
