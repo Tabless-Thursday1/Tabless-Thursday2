@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:500|Raleway&display=swap");
+html, body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#3F8D7D), to(#4DAA88));
+  background-image: linear-gradient(to right, #3F8D7D, #4DAA88);
+  font-family: 'Raleway', 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  .nav-wrapper {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.nav-wrapper .co-logo {
+  margin-left: 3%;
+}
+
+@media (max-width: 500px) {
+  .nav-wrapper .co-logo {
+    background: -webkit-gradient(linear, left top, right top, from(#3F8D7D), color-stop(white), to(#4DAA88));
+    background: linear-gradient(to right, #3F8D7D, white, #4DAA88);
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 3px;
+  }
+}
+
+.nav-wrapper .nav-links {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-wrapper .nav-links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-wrapper .nav-links a:hover {
+  color: #277373;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+@media (max-width: 500px) {
+  .nav-wrapper .nav-links a {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    width: 24%;
+    height: 2em;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-wrapper .nav-links {
+    width: 100%;
+    margin: 1em;
+  }
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.wrapper .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  widows: 300px;
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper .card-body .card {
+  width: 30%;
+  background: white;
+  border-radius: 5px;
+}
+
+.wrapper .card-body .card .overlay {
+  background: #F29188;
+  padding: 1em;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.wrapper .card-body .card .overlay h2 {
+  color: white;
+  margin: 0;
+}
+
+.wrapper .card-body .card .overlay p {
+  color: white;
+}
+
+.wrapper .card-body .card .overlay .card1-img {
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+.wrapper .card-body .card .overlay .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.wrapper .card-body .card .overlay .icons a {
+  color: red;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .card-body:hover .card {
+  -webkit-clip-path: circle(90%);
+          clip-path: circle(90%);
+}
+/*# sourceMappingURL=test2.css.map */

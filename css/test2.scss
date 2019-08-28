@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500|Raleway&display=swap');
+
+
+
+html, body {
+    background-image: linear-gradient(to right,#3F8D7D,#4DAA88,);
+    font-family: 'Raleway', 'Poppins', sans-serif;
+    margin: 0;
+    
+  }
+  .nav-wrapper{
+    display:flex;
+    justify-content:space-between;
+    
+    @media (max-width:500px){
+      width:100%;
+      flex-direction:column;
+      justify-content:center;
+      align-items: center;
+    }
+    .co-logo{
+      margin-left:3%;
+      
+      @media (max-width:500px){
+          background: linear-gradient(to right,#3F8D7D,white,#4DAA88);
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 3px;
+      }
+    }
+    .nav-links{
+      width:50%;
+      display:flex;
+      justify-content:space-evenly;
+      align-items:center;
+      
+      a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+              color: #277373;
+              text-decoration: underline;
+              font-size: 18px;
+          }
+
+          @media (max-width:500px){
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            width: 24%;
+            height: 2em;
+          }
+          
+      }
+      
+      @media (max-width:500px){
+        width:100%;
+        margin: 1em;
+      }
+    }
+  }
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    @media (max-width:500px){
+        flex-wrap: wrap;
+    }
+    .card-body{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        widows: 300px;
+        height: 100%;
+        margin: 0;
+        .card {
+            width: 30%;
+            background: white;
+            border-radius: 5px;
+            // clip-path:  circle(10% at 0% 0%);
+            // transition: clip-path .5s ease-in-out;
+            .overlay {
+                background: #F29188;
+                padding: 1em;
+                border-radius: 5px;
+                width: 100%;
+                h2{
+                    color: white;
+                    margin: 0;
+                }
+                p{
+                    color: white;
+                }
+                
+                .card1-img{
+                    clip-path: circle(50% at 50% 50%);
+                }
+                .icons{
+                    display: flex;
+                    width: 100%;
+                    a{
+                        color: red;
+                        width: 30%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+          }
+          &:hover .card {
+            clip-path: circle(90%);
+        }
+      }
+  }
+  
+

@@ -36,7 +36,19 @@ html, body {
 
 @media (max-width: 500px) {
   .nav-wrapper .co-logo {
-    margin: 0;
+    background: -webkit-gradient(linear, left top, right top, from(#3F8D7D), color-stop(white), to(#4DAA88));
+    background: linear-gradient(to right, #3F8D7D, white, #4DAA88);
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 3px;
   }
 }
 
@@ -53,9 +65,39 @@ html, body {
           align-items: center;
 }
 
+.nav-wrapper .nav-links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-wrapper .nav-links a:hover {
+  color: #277373;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+@media (max-width: 500px) {
+  .nav-wrapper .nav-links a {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    width: 24%;
+    height: 2em;
+  }
+}
+
 @media (max-width: 500px) {
   .nav-wrapper .nav-links {
     width: 100%;
+    margin: 1em;
   }
 }
 
@@ -71,20 +113,6 @@ html, body {
   overflow: hidden;
   position: relative;
   margin: 1.5rem;
-}
-
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-}
-
-.card1-img {
-  width: 140px;
-  height: 140px;
-  -webkit-clip-path: circle(50% at 50% 50%);
-          clip-path: circle(50% at 50% 50%);
 }
 
 .card h1 {
@@ -103,16 +131,6 @@ html, body {
   z-index: 2;
 }
 
-.card.green .additional {
-  background: -webkit-gradient(linear, left top, left bottom, from(#92bCa6), to(#A2CCB6));
-  background: linear-gradient(#92bCa6, #A2CCB6);
-}
-
-.card:hover .additional {
-  width: 100%;
-  border-radius: 0 5px 5px 0;
-}
-
 .card .additional .user-card {
   width: 150px;
   height: 100%;
@@ -120,19 +138,21 @@ html, body {
   float: left;
 }
 
-.card .additional .user-card::after {
-  content: "";
-  display: block;
+.card .additional .user-card .center {
   position: absolute;
-  top: 10%;
-  right: -2px;
-  height: 80%;
-  border-left: 2px solid rgba(0, 0, 0, 0.025);
+  top: 50%;
+  left: 50%;
 }
 
-.card .additional .user-card .level,
-.card .additional .user-card .points {
+.card .additional .user-card .level {
   top: 15%;
+}
+
+.card .additional .user-card .points {
+  top: 85%;
+}
+
+.card .additional .user-card .format {
   color: #fff;
   text-transform: uppercase;
   font-size: 0.75em;
@@ -143,12 +163,14 @@ html, body {
   white-space: nowrap;
 }
 
-.card .additional .user-card .points {
-  top: 85%;
-}
-
-.card .additional .user-card svg {
-  top: 50%;
+.card .additional .user-card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0, 0, 0, 0.025);
 }
 
 .card .additional .more-info {
@@ -164,18 +186,10 @@ html, body {
   margin-bottom: 0;
 }
 
-.card.green .additional .more-info h1 {
-  color: #224C36;
-}
-
 .card .additional .coords {
   margin: 0 1rem;
   color: #fff;
   font-size: 1rem;
-}
-
-.card.green .additional .coords {
-  color: #325C46;
 }
 
 .card .additional .coords span + span {
@@ -195,10 +209,6 @@ html, body {
   color: #fff;
 }
 
-.card.green .additional .stats {
-  color: #325C46;
-}
-
 .card .additional .stats > div {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -210,19 +220,19 @@ html, body {
   display: block;
 }
 
-.card .additional .stats div.title {
+.card .additional .stats .title {
   font-size: 0.75rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.card .additional .stats div.value {
+.card .additional .stats .value {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.5rem;
 }
 
-.card .additional .stats div.value.infinity {
+.card .additional .stats .value.infinity {
   font-size: 2.5rem;
 }
 
@@ -246,7 +256,19 @@ html, body {
   font-size: 0.9em;
 }
 
+.card:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.card1-img {
+  width: 140px;
+  height: 140px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
 .highlight {
   color: #F25041;
 }
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=test.css.map */
