@@ -178,7 +178,7 @@ main section#primary .register-form .btn-register #register:hover {
 }
 
 .section2 {
-  background-color: white;
+  background: white;
   display: block;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -197,5 +197,103 @@ main section#primary .register-form .btn-register #register:hover {
   margin-left: 5em;
   margin-right: 5em;
   padding-bottom: 5em;
+}
+
+.info1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  border-top: 5px solid #277373;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.info1 img {
+  width: 30%;
+  height: 30%;
+  margin-left: 5em;
+  padding-top: 5px;
+}
+
+.info1 p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  justify-items: center;
+  padding-top: 2em;
+  color: #277373;
+  width: 60%;
+}
+
+.section3 {
+  background: white;
+  display: block;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  border-top: 5px solid #277373;
+  margin-top: 1em;
+}
+
+.section3 h2 {
+  color: #277373;
+  margin-left: 3.3em;
+  padding-top: 3em;
+}
+
+.section3 p {
+  color: #277373;
+  justify-items: center;
+  margin-left: 5em;
+  margin-right: 5em;
+  padding-bottom: 5em;
+}
+
+.info2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  border-top: 5px solid #277373;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.info2 img {
+  width: 30%;
+  height: 30%;
+  padding-top: 5px;
+}
+
+.info2 p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  justify-items: center;
+  margin-left: 5em;
+  padding-top: 2em;
+  color: #277373;
+  width: 60%;
+}
+
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  border-top: 5px solid #277373;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bottom img {
+  margin: 0 30%;
+  width: 40%;
+  height: 40%;
 }
 /*# sourceMappingURL=index.css.map */
