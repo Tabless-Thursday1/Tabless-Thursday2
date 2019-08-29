@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins:500|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/734c30eefc.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
@@ -15,27 +17,25 @@
 
     <div id="bg">
         <header>
-            <img src="images/TT_48.png" alt="">
-            <h3>Tables Thursday</h3>
+            <img class="img" src="images/tabless_logo_crop.png" alt="Tabless Logo">
         </header>
 
         <main>
             <section id="card">
                 <ul>
                     <li>
-                        <a href="#organize"><span></span></a>
+                        <span></span>
                         <strong>Organize your Tabs chaos</strong>
                     </li>
                     <li>
-                        <a href="#integrate"><span></span></a>
-                        <strong>Integrated ToDo List</strong>
+                        <span></span>
+                        <strong>Green App</strong>
                     </li>
                     <li>
-                        <a href="#share"><span></span></a>
+                        <span></span>
                         <strong>Share your Organized Tabs</strong>
                     </li>
                 </ul>
-
             </section>
             <section id="primary">
                 <h1>Tabless Thursday</h1>
@@ -50,71 +50,61 @@
         </main>
 
         <div>
-            <section id=organize class="section2">
-                <h2>Don't Loose your Tabs</h2>
-                <p>Chuck Norris once roundhouse kicked someone so hard that his foot broke the speed of light, went back
-                    in time,
-                    and killed Amelia Earhart while she was flying over the Pacific Ocean, Chuck Norris is the only man
-                    to ever defeat
-                    a brick wall in a game of tennis The Great Wall of China was originally created to keep Chuck Norris
-                    out. It failed
-                    miserably. Chuck Norris can lead a horse to water AND make it drink. Crop circles are Chuck Norris'
-                    way of telling
-                    the world that sometimes corn needs to lie down.</p>
-            </section>
-            <section class=info1>
-                <img src="images/undraw_design_sprint_x3eb.png" alt="">
-                <p>Chuck Norris once roundhouse kicked someone so hard that his foot broke the speed of light, went back
-                    in time,
-                    and killed Amelia Earhart while she was flying over the Pacific Ocean, Chuck Norris is the only man
-                    to ever defeat
-                    a brick wall in a game of tennis The Great Wall of China was originally created to keep Chuck Norris
-                    out. It failed
-                    miserably. Chuck Norris can lead a horse to water AND make it drink. Crop circles are Chuck Norris'
-                    way of telling
-                    the world that sometimes corn needs to lie down.</p>
-            </section>
-            <section id=integrate class="section3">
-                <h2>Integrated ToDo List</h2>
-                <p>Chuck Norris once roundhouse kicked someone so hard that his foot broke the speed of light, went back
-                    in time,
-                    and killed Amelia Earhart while she was flying over the Pacific Ocean, Chuck Norris is the only man
-                    to ever defeat
-                    a brick wall in a game of tennis The Great Wall of China was originally created to keep Chuck Norris
-                    out. It failed
-                    miserably. Chuck Norris can lead a horse to water AND make it drink. Crop circles are Chuck Norris'
-                    way of telling
-                    the world that sometimes corn needs to lie down.</p>
-            </section>
-            <section class=info2>
-                <p>Chuck Norris once roundhouse kicked someone so hard that his foot broke the speed of light, went back
-                    in time,
-                    and killed Amelia Earhart while she was flying over the Pacific Ocean, Chuck Norris is the only man
-                    to ever defeat
-                    a brick wall in a game of tennis The Great Wall of China was originally created to keep Chuck Norris
-                    out. It failed
-                    miserably. Chuck Norris can lead a horse to water AND make it drink. Crop circles are Chuck Norris'
-                    way of telling
-                    the world that sometimes corn needs to lie down.</p>
-                <img src="images/undraw_design_sprint_x3eb.png" alt="">
-            </section>
-            <section id=share class="section3">
-                <h2>Share your Organized Tabs</h2>
-                <p>Chuck Norris once roundhouse kicked someone so hard that his foot broke the speed of light, went back
-                    in time,
-                    and killed Amelia Earhart while she was flying over the Pacific Ocean, Chuck Norris is the only man
-                    to ever defeat
-                    a brick wall in a game of tennis The Great Wall of China was originally created to keep Chuck Norris
-                    out. It failed
-                    miserably. Chuck Norris can lead a horse to water AND make it drink. Crop circles are Chuck Norris'
-                    way of telling
-                    the world that sometimes corn needs to lie down.</p>
+            <section class="section2">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                            aria-controls="home" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="green-tab" data-toggle="tab" href="#green" role="tab"
+                            aria-controls="green app" aria-selected="false">Green App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="organize-tab" data-toggle="tab" href="#organize" role="tab"
+                            aria-controls="organize" aria-selected="false">Organize</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="share-tab" data-toggle="tab" href="#share" role="tab"
+                            aria-controls="share tabs" aria-selected="false">Share Organized Tabs</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3>Tabless Thursday</h3> would like to welcome you to the rest of
+                        your life! We have all been there. Tabs can multiple like rabbits and it takes no time at all.
+                        Afraid to close your browser but your computer is
+                        getting sluggish. Taking longer and longer to switch between pages. Other applications don't
+                        want to start or wake up. Your pc fan just hit overdrive
+                        and the hum no has you on the edge of your seat.
+                    </div>
+                    <div class="tab-pane" id="green" role="tabpanel" aria-labelledby="green-tab">
+                        <h3>Green App</h3>That fan kicking into overdrive
+                    </div>
+                    <div class="tab-pane" id="organize" role="tabpanel" aria-labelledby="organize-tab"><h3>Organize</h3> your tabs! </div>
+                    <div class="tab-pane" id="share" role="tabpanel" aria-labelledby="share-tab"><h3>Share</h3> your organized tabs!</div>
+                </div>
+                <script>
+                    $(function () {
+                        $('#myTab li:last-child a').tab('show')
+                    })
+                </script>
             </section>
             <section class="bottom">
-                    <img src="images/undraw_design_sprint_x3eb.png" alt="">
+                <img src="images/undraw_design_sprint_x3eb.png" alt="">
             </section>
         </div>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
 
 </html>

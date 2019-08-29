@@ -36,7 +36,19 @@ html, body {
 
 @media (max-width: 500px) {
   .nav-wrapper .co-logo {
-    margin: 0;
+    background: -webkit-gradient(linear, left top, right top, from(#3F8D7D), color-stop(white), to(#4DAA88));
+    background: linear-gradient(to right, #3F8D7D, white, #4DAA88);
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 3px;
   }
 }
 
@@ -53,200 +65,137 @@ html, body {
           align-items: center;
 }
 
-@media (max-width: 500px) {
-  .nav-wrapper .nav-links {
-    width: 100%;
-  }
-}
-
-.card {
-  width: 450px;
-  height: 250px;
-  background-color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#fff));
-  background: linear-gradient(#f8f8f8, #fff);
-  -webkit-box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
-  border-radius: 6px;
-  overflow: hidden;
-  position: relative;
-  margin: 1.5rem;
-}
-
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-}
-
-.card1-img {
-  width: 140px;
-  height: 140px;
-  -webkit-clip-path: circle(50% at 50% 50%);
-          clip-path: circle(50% at 50% 50%);
-}
-
-.card h1 {
-  text-align: center;
-}
-
-.card .additional {
-  position: absolute;
-  width: 150px;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#dE685E), to(#F29188));
-  background: linear-gradient(#dE685E, #F29188);
-  -webkit-transition: width 0.4s;
-  transition: width 0.4s;
-  overflow: hidden;
-  z-index: 2;
-}
-
-.card.green .additional {
-  background: -webkit-gradient(linear, left top, left bottom, from(#92bCa6), to(#A2CCB6));
-  background: linear-gradient(#92bCa6, #A2CCB6);
-}
-
-.card:hover .additional {
-  width: 100%;
-  border-radius: 0 5px 5px 0;
-}
-
-.card .additional .user-card {
-  width: 150px;
-  height: 100%;
-  position: relative;
-  float: left;
-}
-
-.card .additional .user-card::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 10%;
-  right: -2px;
-  height: 80%;
-  border-left: 2px solid rgba(0, 0, 0, 0.025);
-}
-
-.card .additional .user-card .level,
-.card .additional .user-card .points {
-  top: 15%;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 0.75em;
-  font-weight: bold;
-  background: rgba(0, 0, 0, 0.15);
-  padding: 0.125rem 0.75rem;
-  border-radius: 100px;
-  white-space: nowrap;
-}
-
-.card .additional .user-card .points {
-  top: 85%;
-}
-
-.card .additional .user-card svg {
-  top: 50%;
-}
-
-.card .additional .more-info {
-  width: 300px;
-  float: left;
-  position: absolute;
-  left: 150px;
-  height: 100%;
-}
-
-.card .additional .more-info h1 {
-  color: #fff;
-  margin-bottom: 0;
-}
-
-.card.green .additional .more-info h1 {
-  color: #224C36;
-}
-
-.card .additional .coords {
-  margin: 0 1rem;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.card.green .additional .coords {
-  color: #325C46;
-}
-
-.card .additional .coords span + span {
-  float: right;
-}
-
-.card .additional .stats {
-  font-size: 2rem;
+.nav-wrapper .nav-links a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  right: 1rem;
-  top: auto;
-  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-.card.green .additional .stats {
-  color: #325C46;
+.nav-wrapper .nav-links a:hover {
+  color: #277373;
+  text-decoration: underline;
 }
 
-.card .additional .stats > div {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: center;
+@media (max-width: 500px) {
+  .nav-wrapper .nav-links a {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    width: 24%;
+    height: 2em;
+  }
 }
 
-.card .additional .stats i {
-  display: block;
+@media (max-width: 500px) {
+  .nav-wrapper .nav-links {
+    width: 100%;
+    margin: 1em;
+  }
 }
 
-.card .additional .stats div.title {
-  font-size: 0.75rem;
-  font-weight: bold;
-  text-transform: uppercase;
+header {
+  margin-top: 1em;
+  padding-bottom: 1em;
 }
 
-.card .additional .stats div.value {
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.5rem;
+.intro {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1em;
+  font-size: 18px;
+  color: white;
 }
 
-.card .additional .stats div.value.infinity {
-  font-size: 2.5rem;
+main {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.card .general {
-  width: 300px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 1rem;
-  padding-top: 0;
+.card {
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
 }
 
-.card .general .more {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  font-size: 0.9em;
+.card-img {
+  max-width: 150px;
 }
 
-.highlight {
-  color: #F25041;
+.pro-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1em;
+  background: #F29188;
+}
+
+.pro-img img {
+  -webkit-clip-path: circle(43% at 50% 45%);
+          clip-path: circle(43% at 50% 45%);
+}
+
+.pro-img .avatar {
+  -webkit-clip-path: circle(38% at 50% 50%);
+          clip-path: circle(38% at 50% 50%);
+}
+
+.pro-img .jeff {
+  width: 70%;
+  height: 70%;
+  -webkit-clip-path: circle(45% at 50% 50%);
+          clip-path: circle(45% at 50% 50%);
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #277373;
+}
+
+.m-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.m-bottom .card {
+  width: 100%;
+}
+
+footer {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
 }
 /*# sourceMappingURL=about.css.map */
