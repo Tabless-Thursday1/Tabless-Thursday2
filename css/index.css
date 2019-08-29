@@ -147,11 +147,15 @@ main section#primary a {
       align-content: center;
   width: 100%;
   border-top: 5px solid #277373;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 4em;
+  margin-bottom: 5em;
 }
 
-.section2 h2 {
+.section2 h3 {
   color: #277373;
-  margin-left: 3.3em;
+  margin-left: 1em;
   padding-top: 3em;
 }
 
