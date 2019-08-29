@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500|Raleway&display=swap');
+
+html, body {
+    background-image: linear-gradient(to right,#3F8D7D,#4DAA88,);
+    font-family: 'Raleway', 'Poppins', sans-serif;
+  }
+  .nav-wrapper{
+    display:flex;
+    justify-content:space-between;
+    
+    @media (max-width:500px){
+      width:100%;
+      flex-direction:column;
+      justify-content:center;
+      align-items: center;
+    }
+    .co-logo{
+      margin-left:3%;
+      
+      @media (max-width:500px){
+          background: linear-gradient(to right,#3F8D7D,white,#4DAA88);
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 3px;
+      }
+    }
+    .nav-links{
+      width:50%;
+      display:flex;
+      justify-content:space-evenly;
+      align-items:center;
+      
+      a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          text-decoration: none;
+          font-size: 18px;
+
+          &:hover {
+              color: #277373;
+              text-decoration: underline;
+          }
+
+          @media (max-width:500px){
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            width: 24%;
+            height: 2em;
+          }
+          
+      }
+      
+      @media (max-width:500px){
+        width:100%;
+        margin: 1em;
+      }
+    }
+  }
+header {
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+.intro{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1em;
+    font-size: 18px;
+    color: white;
+}
+
+main {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.card{
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.7)
+}
+
+.card-img{
+    max-width: 150px;
+}
+.pro-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    background: #F29188;
+    img{
+        clip-path: circle(43% at 50% 45%);
+    }
+    .avatar{
+        clip-path: circle(38% at 50% 50%);
+    }
+    .jeff{
+        width: 70%;
+        height: 70%;
+        clip-path: circle(45% at 50% 50%);
+    }
+}
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    a {
+        text-decoration: none;
+        color: #277373;
+
+    }
+}
+.m-bottom{
+    display: flex;
+    justify-content: center;
+    .card{
+        width: 100%;
+    }
+}
+footer{
+    background: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+
+}

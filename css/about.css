@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:500|Raleway&display=swap");
+html, body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#3F8D7D), to(#4DAA88));
+  background-image: linear-gradient(to right, #3F8D7D, #4DAA88);
+  font-family: 'Raleway', 'Poppins', sans-serif;
+}
+
+.nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  .nav-wrapper {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.nav-wrapper .co-logo {
+  margin-left: 3%;
+}
+
+@media (max-width: 500px) {
+  .nav-wrapper .co-logo {
+    background: -webkit-gradient(linear, left top, right top, from(#3F8D7D), color-stop(white), to(#4DAA88));
+    background: linear-gradient(to right, #3F8D7D, white, #4DAA88);
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 3px;
+  }
+}
+
+.nav-wrapper .nav-links {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-wrapper .nav-links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-wrapper .nav-links a:hover {
+  color: #277373;
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .nav-wrapper .nav-links a {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    width: 24%;
+    height: 2em;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-wrapper .nav-links {
+    width: 100%;
+    margin: 1em;
+  }
+}
+
+header {
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+
+.intro {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1em;
+  font-size: 18px;
+  color: white;
+}
+
+main {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.card {
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+.card-img {
+  max-width: 150px;
+}
+
+.pro-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1em;
+  background: #F29188;
+}
+
+.pro-img img {
+  -webkit-clip-path: circle(43% at 50% 45%);
+          clip-path: circle(43% at 50% 45%);
+}
+
+.pro-img .avatar {
+  -webkit-clip-path: circle(38% at 50% 50%);
+          clip-path: circle(38% at 50% 50%);
+}
+
+.pro-img .jeff {
+  width: 70%;
+  height: 70%;
+  -webkit-clip-path: circle(45% at 50% 50%);
+          clip-path: circle(45% at 50% 50%);
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #277373;
+}
+
+.m-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.m-bottom .card {
+  width: 100%;
+}
+
+footer {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+}
+/*# sourceMappingURL=about.css.map */
