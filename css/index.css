@@ -120,21 +120,33 @@ main section#primary p {
   font-size: 1.4em;
 }
 
-main section#primary a {
-  color: #B0D9D5;
-  border-radius: 15px;
+main section#primary .btn-register {
+  border-radius: 1.5rem;
+  border: none;
+  background: #F25041;
+  font-weight: 600;
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+main section#primary .btn-register a {
+  color: white;
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  background-color: #F25041;
-  display: block;
-  text-align: center;
-  margin: 50px auto 0 auto;
-  padding: 15px;
+}
+
+main section#primary .btn-register:hover {
+  background: white;
+  color: #277373;
+}
+
+main section#primary .btn-register:hover a {
+  color: #277373;
+  text-decoration: none;
 }
 
 @media (min-width: 750px) {
-  main section#primary a {
+  main section#primary .btn-register {
     display: inline-block;
     padding: 15px 60px;
   }
