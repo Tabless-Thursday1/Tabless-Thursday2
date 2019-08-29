@@ -6,7 +6,6 @@ body {
 
 a {
   text-decoration: none;
-  color: transparent;
 }
 
 .container {
@@ -40,9 +39,19 @@ a {
   padding: 10px;
 }
 
+.form-left .btn-primary a {
+  color: white;
+  text-decoration: none;
+}
+
 .form-left .btn-primary:hover {
   background: white;
   color: #277373;
+}
+
+.form-left .btn-primary:hover a {
+  color: #277373;
+  text-decoration: none;
 }
 
 .form-right {
@@ -76,8 +85,18 @@ a {
   padding: 10px;
 }
 
+.form-right .register-form .btn-register a {
+  text-decoration: none;
+  color: white;
+}
+
 .form-right .register-form .btn-register:hover {
   background: white;
   color: #F25041;
+}
+
+.form-right .register-form .btn-register:hover a {
+  color: #F25041;
+  text-decoration: none;
 }
 /*# sourceMappingURL=signin-reg.css.map */

@@ -4,7 +4,7 @@ body{
 }
 a{
     text-decoration: none;
-    color: transparent;
+
 }
 .container{
     display: flex;
@@ -28,10 +28,18 @@ a{
         color:white;
         margin-top: 20px;
         padding: 10px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
 
         &:hover {
             background: white;
             color: #277373;
+            a{
+                color: #277373;
+                text-decoration: none;
+            }
         }
     }
 }
@@ -60,10 +68,18 @@ a{
             color:white;
             margin-top: 20px;
             padding: 10px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
 
             &:hover {
                 background: white;
                 color: #F25041;
+                a{
+                    color: #F25041;
+                    text-decoration: none;
+                }
             }
         }
     }
