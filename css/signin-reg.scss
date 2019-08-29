@@ -2,6 +2,10 @@ body{
     background-image: linear-gradient(to right,#4DAA88,#277373);
     margin-top: 5%;
 }
+a{
+    text-decoration: none;
+    color: transparent;
+}
 .container{
     display: flex;
     justify-content: center;
